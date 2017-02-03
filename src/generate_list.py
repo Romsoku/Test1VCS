@@ -27,5 +27,6 @@ def main():
     """
     
 if __name__=='__main__':
-    print("Test print():")
-    main()
+    for i in range(1000):
+        print("Test print():")
+        main()
