@@ -1,7 +1,15 @@
 import random
 
 def generate_list():
+    cantgo = 1
     alist = [x for x in range(random.randint(-10, 10))]
+    assert (alist != []),"alist in Null"
+    sum = 0
+    for i in alist:
+        sum += alist[i]
+        
+    assert sum >= -100, "Sum of alist is lower than -100"
+        
     return alist
     
     """
@@ -19,5 +27,5 @@ def main():
     """
     
 if __name__=='__main__':
-    print("Test print():" )
+    print("Test print():")
     main()
